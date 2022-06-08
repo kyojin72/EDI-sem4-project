@@ -1,0 +1,63 @@
+Natural Language Processing (NLP) is a subfield of Artificial Intelligence that deals with understanding and deriving insights from human languages such as text and speech. Some of the common applications of NLP are Sentiment analysis, Chatbots, Language translation, voice assistance, speech recognition, etc.
+
+
+Why is it necessary to know about NLP? The reason for this is that in today’s world, roughly 2.5 quintillion bytes of data are generated every day. And the majority of them are inherently unstructured. Examples: Text, audio, etc. To make use of the majority of these data and to derive meaning out of it, we need to have a technology that can handle the textual and voice data. NLP is one of technology which helps to extract meaning from these types of data.
+
+
+
+
+
+
+<!-- Stages in Natural Language Processing: -->
+    There are five important stages in NLP:
+
+    Lexical Analysis
+    Syntactic Analysis
+    Semantic Analysis
+    Discourse Integration
+    Pragmatic Analysis
+
+        <!-- Lexical Analysis: -->
+
+        It is the first step in the NLP process where we break the texts into series of tokens or words for easy analysis. It also involves removing unnecessary blanks/white spaces from the sentences
+
+        <!-- Syntactic Analysis -->
+
+        This step refers to the study of how the words are arranged in a sentence to identify whether the words are in the correct order to make sense. It also involves checking whether the sentence is grammatically correct or not and converting the words to root form.
+
+        One of the common technique used in this step is:
+
+        Stemming / Lemmatization: It is the process of converting the words to their root form. Example: Converting the word ‘Studying’ to ‘Study’. The main difference between stemming and lemmatization is stemming might not necessarily result in an actual meaningful word. But lemmatization would result in an actual meaningful word
+        <!-- Semantic Analysis: -->
+
+        This step involves looking out for the meaning of words from the dictionary and checking whether the words are meaningful.
+
+        <!-- Discourse Integration: -->
+
+        The meaning of a sentence in any paragraph depends on the context. Here we analyze how the presence of immediate sentences/words impacts the meaning of the next sentences/words in a paragraph.
+
+        <!-- Pragmatic Analysis: -->
+
+        This is the last phase of the NLP process which involves deriving insights from the textual data and understanding the context.
+
+
+
+
+
+
+
+
+<!-- Long Short Term Memory: -->
+Before getting into LSTM, let’s understand quickly what RNN does?
+
+RNN(reurrent neural network) is a type of supervised deep learning algorithm. Here, the neurons are connected to themselves through time. The idea behind RNN is to remember what information was there in the previous neurons so that these neurons could pass information to themselves in the future for further analysis. It means that the information from a specific time instance (t1) is used as an input for the next time instance(t2). This is the idea behind RNN
+Let’s take an idiom, such as “feeling under the weather”, which is commonly used when someone is ill, to aid us in the explanation of RNNs. In order for the idiom to make sense, it needs to be expressed in that specific order. As a result, recurrent networks need to account for the position of each word in the idiom and they use that information to predict the next word in the sequence.
+    <!-- problem -->
+    Example: Let’s say from the above diagram that we have calculated the error at time instance (t3). To update the weights of all the neurons that have participated in calculating the output at time instance(t3), we need to propagate through time till time instance (t0).
+
+    In a nutshell, if the sequence is long, then RNN finds it difficult to carry information from a particular time instance to an earlier one because of the vanishing gradient problem.
+
+<!-- LSTM -->
+        To overcome this problem, We have LSTM (Long Short Term Memory)!
+        LSTM is an updated version of Recurrent Neural Network to overcome the vanishing gradient problem. Below is the architecture of LSTM with an explanation.
+        It has a memory cell at the top which helps to carry the information from a particular time instance to the next time instance in an efficient manner. So, it can able to remember a lot of information from previous states when compared to RNN and overcomes the vanishing gradient problem. Information might be added or removed from the memory cell with the help of valves.
